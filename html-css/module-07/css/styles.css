@@ -1,0 +1,105 @@
+.wrapper {
+    padding-top: 40px;
+    margin: 0 auto;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: 0 auto;
+    align-items: baseline;
+    padding-bottom: 100px
+
+}
+.logo {
+    font-family: 'Pacifico';
+    font-size: 26px;
+    text-decoration: none;
+    color: #face2e;
+}
+.logo:hover {
+    color: #face2e;
+    text-shadow: 3px 2px 2px rgba(34, 34, 34, 0.7);
+    transition-duration: 0.3s
+}
+
+.nav_point ul {
+    display: flex;
+}
+    
+.nav_point li {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 14px;
+    margin-left: 40px
+}
+.nav_point a {
+    text-decoration: none;
+    color: #222222;
+
+}
+.nav_point a:visited {
+    color: #222222
+}
+.nav_point a:hover {
+    color: #fed136;
+    transition-duration: 0.2s;
+}
+.services {
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 120px
+}
+.services_log {
+    font-family: 'Montserrat';
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px 0
+}
+.services_log2 {
+    font-family: 'Droid Serif Italic';
+    color: #777777;
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+.services_list{ 
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0
+}
+.services_list_item:nth-of-type(1)::before {
+    content: url(../img/basket.png);
+}
+.services_list_item:nth-of-type(2)::before {
+    content: url(../img/computer.png);
+}
+.services_list_item:nth-of-type(3)::before {
+    content: url(../img/lock.png);
+}
+.services_list_item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.services_list_item h3 {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    text-align: center;
+    margin: 22px auto
+}
+.services_list_item p {
+    font-family: 'Roboto Slab';
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    text-align: center;
+    margin: 0 auto
+
+}

@@ -1,0 +1,107 @@
+.contact {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: url("../img/Map_Image.png")#222222 no-repeat 100% 100%;
+    padding-top: 90px;
+    padding-bottom: 90px
+  }
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.contact_header {
+    font-family: 'Montserrat';
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 20px auto
+}
+.contact_second_line {
+    font-family: 'Droid Serif Italic';
+    color: #777777;
+    font-size: 16px;
+    margin: 0 auto 75px auto
+}
+.input {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.column_left {
+    width: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form_name,
+.form_email,
+.form_subject {
+    min-height: 54px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    text-indent: 20px;
+    outline: none;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    border: none
+}
+.message {
+    width: 455px;
+    max-height: 210px;
+    border-radius: 5px;
+    outline: none;
+    text-indent: 20px;
+    padding-top: 18px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+}
+.form_name::placeholder,
+.form_email::placeholder,
+.form_subject::placeholder, 
+.message::placeholder {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-indent: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.message_button {
+    width: 240px;
+    height: 65px;
+    background-color: #fed136;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.message_button:hover {
+    color: #222222;
+    transition-duration: 0.2s;
+    cursor: pointer
+}
+.form_name:valid,
+.form_email:valid,
+.message:valid {
+    box-shadow: inset 0 0 4px 3px #228B22
+}
+.form_name:invalid,
+.form_email:invalid,
+.message:invalid {
+    box-shadow: 0 0 5px 3px transparent
+    
+}
+.form_name:invalid:not(:placeholder-shown),
+.form_email:invalid:not(:placeholder-shown),
+.message:invalid:not(:placeholder-shown) {
+}
